@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchProductsActivity">
+
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/category_spinner"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_centerVertical="true"
+
+
+            ></androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+
+        <EditText
+            android:id="@+id/search_product_name"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del producto"
+            android:textSize="15dp"
+            android:textStyle="bold"
+          android:layout_toRightOf="@+id/category_spinner"
+            android:inputType="textCapSentences"
+            android:background="@android:color/white"
+            android:padding="8dp"
+
+
+            android:layout_centerVertical="true"
+            android:textColorHint="@color/colorPrimaryDark"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/search_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+           android:layout_margin="7dp"
+            android:layout_toRightOf="@+id/search_product_name"
+            android:src="@drawable/search"
+
+
+
+
+
+            android:textColor="@android:color/white"
+
+          />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r5"
+        android:layout_marginTop="2dp"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

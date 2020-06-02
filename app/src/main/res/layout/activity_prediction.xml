@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictionActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/mensaje"
+        android:layout_height="wrap_content"
+        android:text="Estimado usuario, las predicciones estarán disponibles un día antes de la fecha calculada. Si tiene alguna predicción disponible, se mostrará a continuación y se añadirán los productos automáticamente al carrito. "
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="180dp"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/productos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mensaje"
+
+        android:text="Estimado usuario, las predicciones estarán disponibles un día antes de la fecha calculada."
+        android:textColor="@android:color/black"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone"
+        android:textSize="20dp"
+
+
+        ></TextView>
+
+
+
+
+
+    <Button
+        android:id="@+id/comprar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:text="Ir al carrito"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

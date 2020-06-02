@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1018662990375",
+    "firebase_url": "https://dynas-40129.firebaseio.com",
+    "project_id": "dynas-40129",
+    "storage_bucket": "dynas-40129.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018662990375:android:ad5f5cd36588ddca1a9402",
+        "android_client_info": {
+          "package_name": "pe.edu.dynas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018662990375-olo8pa2rsqkf6vlb5kahq7d4471rmom6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.edu.dynas",
+            "certificate_hash": "ce4b616d9a0ebcec859466d1fa8b63affdf39346"
+          }
+        },
+        {
+          "client_id": "1018662990375-fprmaqtle2d03dv05t3ogcvg6blap3h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFrmU0AfNIqHdpjN_-MUVl6VTrXqmzRmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018662990375-fprmaqtle2d03dv05t3ogcvg6blap3h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

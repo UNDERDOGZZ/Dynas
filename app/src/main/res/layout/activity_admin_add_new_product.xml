@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddNewProductActivity">
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:cropToPadding="false"
+        android:src="@drawable/select_product_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_product_image"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:hint="Nombre del producto"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+        />
+
+
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="6dp"
+        android:padding="20dp"
+        android:hint="Descripción"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+        />
+
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_description"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="6dp"
+        android:padding="20dp"
+        android:hint="Precio"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+        />
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/granel_chkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price"
+        style="@style/Material.Drawable.CheckBox"
+        android:text="Granel"
+        android:textColor="@android:color/black"
+        app:cbd_strokeColor="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/envasado_chkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price"
+        style="@style/Material.Drawable.CheckBox"
+        android:text="Envasado"
+        android:textColor="@android:color/black"
+        app:cbd_strokeColor="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/add_new_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/granel_chkb"
+        android:text="Agregar producto"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:background="@drawable/buttons"
+        />
+</RelativeLayout>
